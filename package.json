@@ -1,0 +1,33 @@
+{
+  "name": "manual-node-env",
+  "version": "1.0.4",
+  "main": "./dist-mjs/index.js",
+  "scripts": {
+    "dev": "npm-ez dev",
+    "build": "npm-ez build"
+  },
+  "keywords": [],
+  "author": "NazmusSayad",
+  "license": "ISC",
+  "types": "./dist-mjs/index.d.js",
+  "exports": {
+    ".": {
+      "require": "./dist-cjs/index.js",
+      "import": "./dist-mjs/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazmusSayad/manual-node-env.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NazmusSayad/manual-node-env/issues"
+  },
+  "homepage": "https://github.com/NazmusSayad/manual-node-env#readme",
+  "description": "manually set node env",
+  "devDependencies": {
+    "npm-ez": "^0.0.16",
+    "typescript": "^4.9.3",
+    "@types/node": "^18.11.9"
+  }
+}
