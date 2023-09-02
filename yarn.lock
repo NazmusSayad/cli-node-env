@@ -2,10 +2,20 @@
 # yarn lockfile v1
 
 
+"@babel/parser@^7.20.7":
+  version "7.22.14"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.22.14.tgz#c7de58e8de106e88efca42ce17f0033209dfd245"
+  integrity sha512-1KucTHgOvaw/LzCVrEOAyXkr9rQlp0A1HiHRYnSUE9dmb8PvPW7o5sscg+5169r54n3vGlbx6GevTE/Iw/P3AQ==
+
 "@types/node@^18.11.9":
-  version "18.11.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.9.tgz#02d013de7058cea16d36168ef2fc653464cfbad4"
-  integrity sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==
+  version "18.17.13"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.13.tgz#d99cb351ff2e51a192fe8903b658c4f85fbcb58c"
+  integrity sha512-SlLPDDe6YQl1JnQQy4hgsuJeo5q5c1TBU4be4jeBLXsqpjoDbfb0HesSfhMwnaxfSJ4txtfzJzW5/x/43fkkfQ==
+
+ansi-colors@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-4.1.3.tgz#37611340eb2243e70cc604cad35d63270d48781b"
+  integrity sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==
 
 balanced-match@^1.0.0:
   version "1.0.2"
@@ -72,12 +82,22 @@ interpret@^1.0.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
-is-core-module@^2.9.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.11.0.tgz#ad4cb3e3863e814523c96f3f58d26cc570ff0144"
-  integrity sha512-RRjxlvLDkD1YJwDbroBHMb+cukurkDWNyHx7D3oNB5x9rb5ogcksMC5wHCadcXoo67gVr/+3GFySh3134zi6rw==
+is-core-module@^2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.13.0.tgz#bb52aa6e2cbd49a30c2ba68c42bf3435ba6072db"
+  integrity sha512-Z7dk6Qo8pOCp3l4tsX2C5ZVas4V+UxwQodwZhLopL91TX8UyyHEXafPcyoeeWuLrwzHcr3igO78wNLwHJHsMCQ==
   dependencies:
     has "^1.0.3"
+
+jspac@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/jspac/-/jspac-1.0.0.tgz#c2e2c90a8a0b96832d51cf08917de8bb4c114a8d"
+  integrity sha512-SvfFpLNj0cin4oq6WgODMs7o1zh2EzMHlTdUBkPHy3cBqZFwMWbYGk8tmmCTDkfneQ4kV/DJslJgEZBY/QgkNA==
+  dependencies:
+    "@babel/parser" "^7.20.7"
+    ansi-colors "^4.1.3"
+    node-ls-files "^0.0.3"
+    shelljs "^0.8.5"
 
 minimatch@^3.1.1:
   version "3.1.2"
@@ -90,14 +110,6 @@ node-ls-files@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/node-ls-files/-/node-ls-files-0.0.3.tgz#37e1158892521fadfb9cfa7570fb2976d5c9fece"
   integrity sha512-OhZBvqbaSdZmAWAHX5xPHWrGep2Q0XDy6Kt3DY0LSWwEoiImWT41zW1oXwlIbQvJHrb3qO3itZRK0zhogLKPqA==
-
-npm-ez@^0.0.16:
-  version "0.0.16"
-  resolved "https://registry.yarnpkg.com/npm-ez/-/npm-ez-0.0.16.tgz#1622ae1b962e00d973c0631736a588567a4fc1bd"
-  integrity sha512-iPAJWfMdGemHpGYta68uCRUHAGmesuzhWNxaV9KVz366D8beWpSjuOnl7++14h/oFB7cceoQqe1ou1KhTbixPw==
-  dependencies:
-    node-ls-files "^0.0.3"
-    shelljs "^0.8.5"
 
 once@^1.3.0:
   version "1.4.0"
@@ -124,11 +136,11 @@ rechoir@^0.6.2:
     resolve "^1.1.6"
 
 resolve@^1.1.6:
-  version "1.22.1"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.1.tgz#27cb2ebb53f91abb49470a928bba7558066ac177"
-  integrity sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==
+  version "1.22.4"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.4.tgz#1dc40df46554cdaf8948a486a10f6ba1e2026c34"
+  integrity sha512-PXNdCiPqDqeUou+w1C2eTQbNfxKSuMxqTCuvlmmMsk1NWHL5fRrhY6Pl0qEYYc6+QqGClco1Qj8XnjPego4wfg==
   dependencies:
-    is-core-module "^2.9.0"
+    is-core-module "^2.13.0"
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
 
@@ -147,9 +159,9 @@ supports-preserve-symlinks-flag@^1.0.0:
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
 typescript@^4.9.3:
-  version "4.9.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.3.tgz#3aea307c1746b8c384435d8ac36b8a2e580d85db"
-  integrity sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==
+  version "4.9.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
+  integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 wrappy@1:
   version "1.0.2"

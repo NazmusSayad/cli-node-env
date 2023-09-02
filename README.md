@@ -1,9 +1,9 @@
-# manual-node-env
+# cli-node-env
 
 Simple usages of NODE_ENV
 
-<a href="https://npmjs.com/package/manual-node-env">
-  <img src="https://img.shields.io/npm/v/manual-node-env" alt="npm package"> 
+<a href="https://npmjs.com/package/cli-node-env">
+  <img src="https://img.shields.io/npm/v/cli-node-env" alt="npm package"> 
 </a>
 
 <br/>
@@ -20,19 +20,19 @@ Simple usages of NODE_ENV
 - with npm
 
 ```shell
-npm i manual-node-env
+npm i cli-node-env
 ```
 
 - with yarn
 
 ```shell
-yarn add manual-node-env
+yarn add cli-node-env
 ```
 
 - with pnpm
 
 ```shell
-pnpm add manual-node-env
+pnpm add cli-node-env
 ```
 
 <br/>
@@ -45,9 +45,9 @@ pnpm add manual-node-env
 // Use this package at the top of your entry file
 
 // Esmodules
-import 'manual-node-env'
+import 'cli-node-env'
 // CommonJS modules
-require('manual-node-env')
+require('cli-node-env')
 
 console.log(process.env.NODE_ENV)
 

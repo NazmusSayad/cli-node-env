@@ -1,10 +1,11 @@
 {
-  "name": "manual-node-env",
-  "version": "1.0.4",
-  "main": "./dist-mjs/index.js",
+  "name": "cli-node-env",
+  "version": "1.0.0",
+  "module": "./dist-mjs/index.mjs",
+  "main": "./dist-cjs/index.cjs",
   "scripts": {
-    "dev": "npm-ez dev",
-    "build": "npm-ez build"
+    "dev": "jspac dev",
+    "build": "jspac build"
   },
   "keywords": [],
   "author": "NazmusSayad",
@@ -12,22 +13,23 @@
   "types": "./dist-mjs/index.d.js",
   "exports": {
     ".": {
-      "require": "./dist-cjs/index.js",
-      "import": "./dist-mjs/index.js"
+      "require": "./dist-cjs/index.cjs",
+      "import": "./dist-mjs/index.mjs",
+      "types": "./dist-mjs/index.d.mts"
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NazmusSayad/manual-node-env.git"
+    "url": "git+https://github.com/NazmusSayad/cli-node-env.git"
   },
   "bugs": {
-    "url": "https://github.com/NazmusSayad/manual-node-env/issues"
+    "url": "https://github.com/NazmusSayad/cli-node-env/issues"
   },
-  "homepage": "https://github.com/NazmusSayad/manual-node-env#readme",
+  "homepage": "https://github.com/NazmusSayad/cli-node-env#readme",
   "description": "manually set node env",
   "devDependencies": {
-    "npm-ez": "^0.0.16",
-    "typescript": "^4.9.3",
-    "@types/node": "^18.11.9"
+    "@types/node": "^18.11.9",
+    "jspac": "^1.0.0",
+    "typescript": "^4.9.3"
   }
 }

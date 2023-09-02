@@ -12,5 +12,8 @@
 		"strict": true,
 		"pretty": true,
 		"removeComments": true
-	}
+	},
+	"include": [
+		"src"
+	]
 }
