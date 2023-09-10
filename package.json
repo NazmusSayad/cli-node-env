@@ -1,6 +1,6 @@
 {
   "name": "cli-node-env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "module": "./dist-mjs/index.mjs",
   "main": "./dist-cjs/index.cjs",
   "scripts": {
@@ -10,7 +10,6 @@
   "keywords": [],
   "author": "NazmusSayad",
   "license": "ISC",
-  "types": "./dist-mjs/index.d.js",
   "exports": {
     ".": {
       "require": "./dist-cjs/index.cjs",
